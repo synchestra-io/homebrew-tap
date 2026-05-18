@@ -5,21 +5,21 @@
 class Specscore < Formula
   desc "SpecScore CLI — lint, validate, and navigate Markdown specifications."
   homepage "https://specscore.md"
-  version "1.0.0"
+  version "1.0.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/synchestra-io/specscore-cli/releases/download/v1.0.0/specscore_1.0.0_darwin_amd64.tar.gz"
-      sha256 "ba83507d9964cbadc6650e5803117155505d5fb41fd0019373123edf9d44bd09"
+      url "https://github.com/synchestra-io/specscore-cli/releases/download/v1.0.1/specscore_1.0.1_darwin_amd64.tar.gz"
+      sha256 "b7433c920dc14d11d3fb3d9b58203217460627d0d32b95e1597e67768ce1f072"
 
       define_method(:install) do
         bin.install "specscore"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/synchestra-io/specscore-cli/releases/download/v1.0.0/specscore_1.0.0_darwin_arm64.tar.gz"
-      sha256 "3d87f863d8f1d07b399ce9025788fdc704e5042b95501f5ae42ed69eea1bdbf3"
+      url "https://github.com/synchestra-io/specscore-cli/releases/download/v1.0.1/specscore_1.0.1_darwin_arm64.tar.gz"
+      sha256 "8d47aa694598e66b2ab31b977bbce95a7a211457e1dfae353edc7a1652ff58d4"
 
       define_method(:install) do
         bin.install "specscore"
@@ -29,15 +29,15 @@ class Specscore < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/synchestra-io/specscore-cli/releases/download/v1.0.0/specscore_1.0.0_linux_amd64.tar.gz"
-      sha256 "d53f11c336240a4d6332bb8e2495fe7371b77b175faf42515135096a56ba7b33"
+      url "https://github.com/synchestra-io/specscore-cli/releases/download/v1.0.1/specscore_1.0.1_linux_amd64.tar.gz"
+      sha256 "538e1991d8518638417c68d632a5084cc0bb908c7b09f693bfbb2e07ebad25ae"
       define_method(:install) do
         bin.install "specscore"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/synchestra-io/specscore-cli/releases/download/v1.0.0/specscore_1.0.0_linux_arm64.tar.gz"
-      sha256 "e9cbf874db3f5c966ac63d30ebc36e8759cbc4e6d821ee671110bc7f4544196a"
+      url "https://github.com/synchestra-io/specscore-cli/releases/download/v1.0.1/specscore_1.0.1_linux_arm64.tar.gz"
+      sha256 "e291d1778700d40b8eab2be7cf60f40563a7d7ffbda180ba2b3c6b330b42ea0e"
       define_method(:install) do
         bin.install "specscore"
       end
